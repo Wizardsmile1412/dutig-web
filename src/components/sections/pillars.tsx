@@ -26,7 +26,7 @@ export async function Pillars() {
 
         <div className="grid gap-6 md:grid-cols-3">
           {PILLARS.map(({ key, icon: Icon }) => (
-            <Card key={key} tone="light" interactive className="flex flex-col gap-4">
+            <Card key={key} tone="light" interactive className="flex flex-col gap-4 hover:scale-[1.03] focus-within:scale-[1.03]">
               <span className="inline-flex size-12 items-center justify-center rounded-xl bg-blue-600/10 text-blue-600">
                 <Icon className="size-6" aria-hidden="true" />
               </span>

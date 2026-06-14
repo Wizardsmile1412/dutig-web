@@ -36,7 +36,7 @@ export async function UseCases() {
           {USE_CASES.map(({ key, icon: Icon }) => (
             <li
               key={key}
-              className="flex flex-col items-center gap-3 rounded-2xl border border-gray-200 bg-white p-6 text-center transition-colors hover:border-blue-600/40"
+              className="flex flex-col items-center gap-3 rounded-2xl border border-gray-200 bg-white p-6 text-center transition-all duration-200 hover:scale-[1.03] hover:border-blue-600/40 focus-within:scale-[1.03]"
             >
               <span className="inline-flex size-12 items-center justify-center rounded-xl bg-navy-900/5 text-navy-900">
                 <Icon className="size-6" aria-hidden="true" />

@@ -25,7 +25,7 @@ export async function AccountRoles() {
   const t = await getTranslations("Roles");
 
   return (
-    <Section id="roles" tone="navy">
+    <Section id="roles" tone="navy" className="bg-gradient-to-b from-navy-950 to-navy-800">
       <Container className="flex flex-col gap-12">
         <SectionHeading
           eyebrow={t("eyebrow")}
@@ -42,7 +42,7 @@ export async function AccountRoles() {
                 tone="navy"
                 interactive
                 className={cn(
-                  "relative flex h-full flex-col gap-5 overflow-hidden",
+                  "relative flex h-full flex-col gap-5 overflow-hidden hover:scale-[1.03] focus-within:scale-[1.03]",
                   primary && "border-blue-600/50 bg-blue-600/10",
                 )}
               >

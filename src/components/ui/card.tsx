@@ -10,7 +10,7 @@ const cardVariants = cva("rounded-2xl p-6 sm:p-7", {
       outline: "border border-navy-900/10 bg-transparent",
     },
     interactive: {
-      true: "transition-colors",
+      true: "transition-all duration-200",
       false: "",
     },
   },
