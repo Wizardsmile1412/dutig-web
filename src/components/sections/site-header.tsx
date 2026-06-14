@@ -14,7 +14,7 @@ export async function SiteHeader({ locale }: { locale: Locale }) {
   const t = await getTranslations("Nav");
 
   return (
-    <header className="relative z-10 bg-navy-900 py-5 text-white">
+    <header className="relative z-10 py-5">
       <Container className="flex items-center justify-between gap-4">
         <a
           href="#top"

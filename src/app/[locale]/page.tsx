@@ -20,9 +20,13 @@ export default async function HomePage({
 
   return (
     <div id="top" className="flex min-h-screen flex-col">
-      <SiteHeader locale={locale} />
-      <main className="flex flex-col">
+      {/* Header + hero share one gradient band: navy-950 → navy-800 */}
+      <div className="bg-gradient-to-b from-navy-950 to-navy-800 text-white">
+        <SiteHeader locale={locale} />
         <Hero />
+      </div>
+
+      <main className="flex flex-col">
         <Pillars />
         <HowItWorks />
         <AccountRoles />
@@ -30,6 +34,7 @@ export default async function HomePage({
         <AppShowcase />
         <GetTheApp />
       </main>
+
       <SiteFooter />
     </div>
   );

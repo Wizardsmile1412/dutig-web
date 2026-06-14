@@ -15,8 +15,8 @@ export async function Hero() {
   ];
 
   return (
-    <section className="bg-navy-900 text-white">
-      <Container className="flex flex-col items-center py-20 text-center sm:py-28">
+    <section>
+      <Container className="flex flex-col items-center py-20 text-center">
       <Badge tone="onNavy" className="mb-6">
         {t("badge")}
       </Badge>

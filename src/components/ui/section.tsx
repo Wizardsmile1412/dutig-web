@@ -12,7 +12,7 @@ const sectionVariants = cva("scroll-mt-20", {
       muted: "bg-gray-50 text-navy-900",
     },
     spacing: {
-      normal: "py-20 sm:py-28",
+      normal: "py-20",
       compact: "py-14 sm:py-20",
     },
   },

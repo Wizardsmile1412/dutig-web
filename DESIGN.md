@@ -44,7 +44,7 @@ Text on navy uses `white` with `white/70` for secondary; text on light uses
 ## Spacing & shape
 
 - Container: `max-w-6xl` + `px-6 lg:px-8` (the `Container` primitive).
-- Section rhythm: `py-20 sm:py-28` (normal), `py-14 sm:py-20` (compact).
+- Section rhythm: `py-20` (normal), `py-14 sm:py-20` (compact).
 - Radii: cards `rounded-2xl`, pills/badges `rounded-full`, buttons `rounded-lg`.
 - Borders: `gray-200` on light, `white/10` on navy.
 
