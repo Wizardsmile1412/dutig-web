@@ -33,9 +33,9 @@ export async function AppShowcase() {
           align="center"
         />
 
-        <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="flex snap-x snap-mandatory gap-6 overflow-x-auto pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {screens.map(({ key, src }) => (
-            <li key={key} className="flex flex-col items-center gap-5 text-center">
+            <li key={key} className="group flex w-[75vw] max-w-[240px] flex-none snap-center flex-col items-center gap-5 text-center">
               {/* Phone bezel wrapping the real screenshot. */}
               <div className="relative aspect-[9/19] w-full max-w-[200px] overflow-hidden rounded-[1.75rem] border border-navy-900/10 bg-navy-900 p-1.5 shadow-md">
                 <div className="relative h-full w-full overflow-hidden rounded-[1.4rem] bg-white">
@@ -44,12 +44,12 @@ export async function AppShowcase() {
                     alt={t(`items.${key}.title`)}
                     fill
                     sizes="200px"
-                    className="object-cover object-top"
+                    className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
               </div>
-              <div className="flex flex-col gap-1.5">
-                <h3 className="font-semibold tracking-tight">
+              <div className="flex flex-col gap-1.5 transition-transform duration-300 group-hover:-translate-y-1">
+                <h3 className="font-semibold tracking-tight transition-colors duration-300 group-hover:text-blue-600">
                   {t(`items.${key}.title`)}
                 </h3>
                 <p className="text-pretty text-sm leading-relaxed text-navy-900/70">
