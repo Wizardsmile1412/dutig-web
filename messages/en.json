@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "title": "Dutig — Mobile Security Application",
+    "description": "Dutig is a hardware-free mobile security app that connects everyone in your area into one security community. Enhance, connect, and verify access for condos, villages, factories, warehouses and offices."
+  },
+  "Nav": {
+    "getApp": "Get the app"
+  },
+  "Hero": {
+    "badge": "Mobile Security Application",
+    "title": "Enhance your security system",
+    "subtitle": "Dutig turns everyone in your area into one connected security community — no hardware required. Enhance, connect, and verify, all from one app.",
+    "ctaAppStore": "Download on the App Store",
+    "ctaGooglePlay": "Google Play — coming soon"
+  },
+  "LocaleSwitcher": {
+    "label": "Language",
+    "th": "TH",
+    "en": "EN"
+  }
+}
