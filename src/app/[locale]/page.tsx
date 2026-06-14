@@ -1,12 +1,14 @@
-import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Apple, Play } from "lucide-react";
-import { Button, buttonVariants } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Container } from "@/components/ui/container";
-import { LocaleSwitcher } from "@/components/locale-switcher";
+import { setRequestLocale } from "next-intl/server";
+import { SiteHeader } from "@/components/sections/site-header";
+import { Hero } from "@/components/sections/hero";
+import { Pillars } from "@/components/sections/pillars";
+import { HowItWorks } from "@/components/sections/how-it-works";
+import { AccountRoles } from "@/components/sections/account-roles";
+import { UseCases } from "@/components/sections/use-cases";
+import { AppShowcase } from "@/components/sections/app-showcase";
+import { GetTheApp } from "@/components/sections/get-the-app";
+import { SiteFooter } from "@/components/sections/site-footer";
 import type { Locale } from "@/i18n/routing";
-
-const APP_STORE_URL = "https://apps.apple.com/th/app/dutig/id1623325508";
 
 export default async function HomePage({
   params,
@@ -15,81 +17,20 @@ export default async function HomePage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations("Hero");
-  const tNav = await getTranslations("Nav");
 
   return (
-    <div className="flex min-h-screen flex-col bg-navy-900 text-white">
-      {/* Header */}
-      <header className="py-5">
-        <Container className="flex items-center justify-between">
-          <span className="text-2xl font-bold tracking-tight">Dutig</span>
-          <div className="flex items-center gap-4">
-            <LocaleSwitcher currentLocale={locale} />
-            <a
-              href={APP_STORE_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={buttonVariants({
-                variant: "primary",
-                size: "sm",
-                className: "hidden sm:inline-flex",
-              })}
-            >
-              {tNav("getApp")}
-            </a>
-          </div>
-        </Container>
-      </header>
-
-      {/* Hero (placeholder — Phase 4 builds the full sections) */}
-      <main className="flex flex-1 flex-col">
-        <Container className="flex flex-1 flex-col items-center justify-center py-16 text-center">
-          <Badge tone="onNavy" className="mb-5">
-            {t("badge")}
-          </Badge>
-          <h1 className="max-w-3xl text-balance text-4xl font-bold leading-tight tracking-tight sm:text-5xl md:text-6xl">
-            {t("title")}
-          </h1>
-          <p className="mt-6 max-w-2xl text-pretty text-lg text-white/70">
-            {t("subtitle")}
-          </p>
-
-          <div className="mt-9 flex flex-col items-center gap-3 sm:flex-row">
-            <a
-              href={APP_STORE_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={buttonVariants({ variant: "primary", size: "lg" })}
-            >
-              <Apple className="size-5" aria-hidden="true" />
-              {t("ctaAppStore")}
-            </a>
-            {/*
-              "Coming soon" affordance. Native `disabled` keeps it inert without
-              client JS (this is a server component); the visible label already
-              reads "… coming soon", so screen readers announce the state. We mark
-              it aria-disabled too for AT that don't expose the disabled state.
-            */}
-            <Button
-              type="button"
-              variant="outline"
-              size="lg"
-              disabled
-              aria-disabled="true"
-            >
-              <Play className="size-5" aria-hidden="true" />
-              {t("ctaGooglePlay")}
-            </Button>
-          </div>
-        </Container>
+    <div id="top" className="flex min-h-screen flex-col">
+      <SiteHeader locale={locale} />
+      <main className="flex flex-col">
+        <Hero />
+        <Pillars />
+        <HowItWorks />
+        <AccountRoles />
+        <UseCases />
+        <AppShowcase />
+        <GetTheApp />
       </main>
-
-      <footer className="py-8 text-sm text-white/50">
-        <Container className="text-center">
-          © {new Date().getFullYear()} Dutig · Mobile Security Application
-        </Container>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

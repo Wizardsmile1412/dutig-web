@@ -22,6 +22,11 @@
   --font-sans:
     var(--font-ibm-plex-sans-thai), "IBM Plex Sans Thai", "IBM Plex Sans",
     system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans Thai", sans-serif;
+
+  /* Monospace for credential codes (Account Roles signature section). */
+  --font-mono:
+    var(--font-ibm-plex-mono), "IBM Plex Mono", ui-monospace, SFMono-Regular,
+    "SF Mono", Menlo, Consolas, monospace;
 }
 
 body {

@@ -4,6 +4,8 @@
     "description": "Dutig is a hardware-free mobile security app that connects everyone in your area into one security community. Enhance, connect, and verify access for condos, villages, factories, warehouses and offices."
   },
   "Nav": {
+    "pillars": "How it works",
+    "roles": "Roles",
     "getApp": "Get the app"
   },
   "Hero": {
@@ -11,7 +13,142 @@
     "title": "Enhance your security system",
     "subtitle": "Dutig turns everyone in your area into one connected security community — no hardware required. Enhance, connect, and verify, all from one app.",
     "ctaAppStore": "Download on the App Store",
-    "ctaGooglePlay": "Google Play — coming soon"
+    "ctaGooglePlay": "Google Play — coming soon",
+    "noHardware": "No hardware to install",
+    "freeToStart": "Free to download",
+    "worksEverywhere": "Condos · villages · factories"
+  },
+  "Pillars": {
+    "eyebrow": "Enhance · Connect · Verify",
+    "title": "Three pillars of safer areas",
+    "intro": "Dutig doesn't replace the security procedures you already trust. It applies them through an app, so everyone in the area takes part in keeping it safe.",
+    "enhance": {
+      "name": "Enhance",
+      "title": "Raise your security standard",
+      "body": "Keep the procedures and structure you already use. Dutig applies those fundamentals through modern technology, making everyday security faster, clearer and safer."
+    },
+    "connect": {
+      "name": "Connect",
+      "title": "Everyone in the area takes part",
+      "body": "Good security works when people participate. Dutig links residents, staff, guards and management into one connected security community."
+    },
+    "verify": {
+      "name": "Verify",
+      "title": "Screen every entry and exit",
+      "body": "People, vehicles and assets entering or leaving must be identifiable and approved by the right person — reducing risk across the whole area."
+    }
+  },
+  "HowItWorks": {
+    "eyebrow": "How it works",
+    "title": "Set up security in four steps",
+    "intro": "No installers, no fixed equipment. Dutig runs on the smartphones and tablets your community already carries.",
+    "steps": {
+      "noHardware": {
+        "title": "Skip the hardware",
+        "body": "No cameras, sensors or gate controllers to buy or wire. Dutig works entirely from a mobile app on phones and tablets."
+      },
+      "download": {
+        "title": "Download and register",
+        "body": "Install Dutig from the app store. The administrator account (Manatig) registers first and designs the area's security setup."
+      },
+      "community": {
+        "title": "Build your community",
+        "body": "Add guards, residents and staff as their own account roles. Every member is screened and approved before they join."
+      },
+      "control": {
+        "title": "Control and verify",
+        "body": "Manage entry and exit, issue gate passes, and review activity and statistics — all in one place, all verified."
+      }
+    }
+  },
+  "Roles": {
+    "eyebrow": "Account roles",
+    "title": "Every member carries a credential",
+    "intro": "Access in Dutig works like a credential system. Each role has its own code and permissions, and serves both industrial (I) and residential (II) areas.",
+    "verified": "Verified access",
+    "industrial": "Industrial · I",
+    "residential": "Residential · II",
+    "firstAccount": "First account",
+    "items": {
+      "manatig": {
+        "name": "Manatig",
+        "code": "MNG-01",
+        "role": "Administrator",
+        "body": "Full control of the app. Designs the security setup, manages and screens every account, sees all data, and approves outsider entry and exit. Must be the first account registered."
+      },
+      "asstManatig": {
+        "name": "Asst. Manatig",
+        "code": "MNG-02",
+        "role": "Deputy administrator",
+        "body": "Reviews data and statistics and approves entry and exit — without changing the security setup itself."
+      },
+      "guardig": {
+        "name": "Guardig",
+        "code": "GRD-03",
+        "role": "Security guard",
+        "body": "Core guard duties: scheduled patrols and incident reporting from the app."
+      },
+      "guardigPlus": {
+        "name": "Guardig+",
+        "code": "GRD-04",
+        "role": "Screening guard",
+        "body": "Everything a Guardig does, plus screening-point duties: issuing gate passes and checking permission requests."
+      },
+      "residentig": {
+        "name": "Residentig",
+        "code": "RSD-05",
+        "role": "Resident",
+        "body": "Resident conveniences and approval of visitor entry. Home automation and home security are in development."
+      }
+    }
+  },
+  "UseCases": {
+    "eyebrow": "Where Dutig works",
+    "title": "Built for managed areas of every kind",
+    "intro": "Anywhere people, vehicles and assets move through controlled entry points, Dutig brings the whole area into one system.",
+    "items": {
+      "villages": "Villages",
+      "condos": "Condos",
+      "warehouses": "Warehouses",
+      "factories": "Factories",
+      "offices": "Offices"
+    }
+  },
+  "Showcase": {
+    "eyebrow": "Inside the app",
+    "title": "Everything your area needs, in one app",
+    "intro": "From sign-in to gate passes to live statistics — Dutig puts the whole security workflow on a screen everyone already knows.",
+    "items": {
+      "signIn": {
+        "title": "Bilingual sign-in",
+        "body": "Secure access in Thai or English, switchable in a tap."
+      },
+      "dashboard": {
+        "title": "Statistics dashboard",
+        "body": "Live view of gate passes, activity and area status."
+      },
+      "permission": {
+        "title": "Permission to leave",
+        "body": "Request and approve entry and exit, recorded and verified."
+      },
+      "roles": {
+        "title": "Role management",
+        "body": "Add, screen and manage every account from one place."
+      }
+    }
+  },
+  "GetApp": {
+    "eyebrow": "Get the app",
+    "title": "Bring your area into one security community",
+    "intro": "Download Dutig free and start with the administrator account. Setup takes minutes — no hardware, no installers.",
+    "ctaAppStore": "Download on the App Store",
+    "ctaGooglePlay": "Google Play — coming soon",
+    "free": "Free to download · in-app options for Manatig subscription and gate-pass packs"
+  },
+  "Footer": {
+    "tagline": "Hardware-free mobile security that connects everyone in your area.",
+    "getApp": "Download on the App Store",
+    "rights": "Mobile Security Application"
   },
   "LocaleSwitcher": {
     "label": "Language",

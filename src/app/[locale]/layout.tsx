@@ -10,7 +10,7 @@ import { locales, type Locale } from "@/i18n/routing";
 
 // IBM Plex Sans Thai is fetched + self-hosted by next/font at build time.
 // (Needs network to fonts.googleapis.com — works on your machine / Vercel.)
-import { sans } from "@/lib/fonts";
+import { sans, mono } from "@/lib/fonts";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -52,7 +52,10 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${sans.variable} h-full antialiased`}>
+    <html
+      lang={locale}
+      className={`${sans.variable} ${mono.variable} h-full antialiased`}
+    >
       <body className="min-h-full">
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}

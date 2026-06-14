@@ -49,12 +49,12 @@ works on a normal machine / Vercel, but fails in network-restricted sandboxes.
 
 - ✅ **Phase 1** — scaffold, bilingual i18n, brand tokens, static SSG, placeholder hero.
 - ✅ **Phase 2** — design-system primitives + `DESIGN.md`.
-- ▶️ **Next: Phases 3 + 4, done together per section.** Phase 3 (content) and
-  Phase 4 (UI) are interleaved: for each section, write its TH + EN copy into
-  `messages/*.json` **and** build the component from the primitives in the same
-  pass. Section order: Hero → Pillars (Enhance · Connect · Verify) → How it works →
-  Account Roles → Use cases → App showcase → Get the app → Footer.
-  Build one section at a time and keep `lint` + `build` green after each.
+- ✅ **Phases 3 + 4** — all sections built (content + UI together). Bilingual copy
+  in `messages/*.json`; components in `src/components/sections/` composed in
+  `src/app/[locale]/page.tsx`: Hero → Pillars → How it works → Account Roles
+  (signature credential cards, IBM Plex Mono codes) → Use cases → App showcase
+  (phone-frame placeholders, ready for real screens) → Get the app → Footer.
+  `lint` + `build` green; `/th` + `/en` prerender static.
 
 **Read these for full context:**
 - `DESIGN.md` — design direction, tokens, type scale, and the **signature element**
