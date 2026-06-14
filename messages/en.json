@@ -125,11 +125,11 @@
       },
       "dashboard": {
         "title": "Statistics dashboard",
-        "body": "Live view of gate passes, activity and area status."
+        "body": "Live view of patrols, activity and area status."
       },
       "permission": {
-        "title": "Permission to leave",
-        "body": "Request and approve entry and exit, recorded and verified."
+        "title": "Entry & exit permits",
+        "body": "Approve who comes and goes — every request recorded and verified."
       },
       "roles": {
         "title": "Role management",
