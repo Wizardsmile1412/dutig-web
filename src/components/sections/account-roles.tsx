@@ -25,7 +25,7 @@ export async function AccountRoles() {
   const t = await getTranslations("Roles");
 
   return (
-    <Section id="roles" tone="navy" className="bg-gradient-to-b from-navy-950 to-navy-800">
+    <Section id="roles" tone="navy" className="bg-transparent">
       <Container className="flex flex-col gap-12">
         <SectionHeading
           eyebrow={t("eyebrow")}

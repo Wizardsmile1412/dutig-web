@@ -16,20 +16,20 @@ export async function Hero() {
 
   return (
     <section>
-      <Container className="flex flex-col items-center py-20 text-center">
+      <Container className="flex flex-col items-start py-20 text-left lg:py-28">
       <Badge tone="onNavy" className="mb-6">
         {t("badge")}
       </Badge>
 
-      <h1 className="max-w-3xl text-balance text-4xl font-bold leading-tight tracking-tight sm:text-5xl md:text-6xl">
+      <h1 className="max-w-xl text-balance text-4xl font-bold leading-tight tracking-tight sm:text-5xl md:text-6xl">
         {t("title")}
       </h1>
 
-      <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-white/70">
+      <p className="mt-6 max-w-lg text-pretty text-lg leading-relaxed text-white/70">
         {t("subtitle")}
       </p>
 
-      <div className="mt-9 flex flex-col items-center gap-3 sm:flex-row">
+      <div className="mt-9 flex flex-col items-start gap-3 sm:flex-row">
         <a
           href={APP_STORE_URL}
           target="_blank"
@@ -51,7 +51,7 @@ export async function Hero() {
         </Button>
       </div>
 
-      <ul className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-white/60">
+      <ul className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-white/60">
         {trust.map(({ icon: Icon, label }) => (
           <li key={label} className="inline-flex items-center gap-2">
             <Icon className="size-4 text-blue-400" aria-hidden="true" />

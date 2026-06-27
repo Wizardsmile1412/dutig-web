@@ -1,4 +1,5 @@
 import { setRequestLocale } from "next-intl/server";
+import Image from "next/image";
 import { SiteHeader } from "@/components/sections/site-header";
 import { Hero } from "@/components/sections/hero";
 import { Pillars } from "@/components/sections/pillars";
@@ -20,17 +21,44 @@ export default async function HomePage({
 
   return (
     <div id="top" className="flex min-h-screen flex-col">
-      {/* Header + hero share one gradient band: navy-950 → navy-800 */}
-      <div className="bg-gradient-to-b from-navy-950 to-navy-800 text-white">
-        <SiteHeader locale={locale} />
-        <Hero />
+      {/* Header + hero share one photo band, darkened toward the text side. */}
+      <div className="relative isolate overflow-hidden text-white">
+        <Image
+          src="/security-guard-phone.jpg"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-[78%_20%]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/90 to-navy-950/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-navy-950/80 via-transparent to-navy-950/70" />
+        <div className="relative z-10">
+          <SiteHeader locale={locale} />
+          <Hero />
+        </div>
       </div>
 
       <main className="flex flex-col">
         <Pillars />
         <HowItWorks />
-        <AccountRoles />
-        <UseCases />
+
+        {/* Roles + use-cases share one photo band: a continuous dark/building backdrop. */}
+        <div className="relative isolate overflow-hidden text-white">
+          <Image
+            src="/office-building.jpg"
+            alt=""
+            fill
+            sizes="100vw"
+            className="object-cover object-[70%_center]"
+          />
+          <div className="absolute inset-0 bg-navy-950/85" />
+          <div className="relative z-10">
+            <AccountRoles />
+            <UseCases />
+          </div>
+        </div>
+
         <AppShowcase />
         <GetTheApp />
       </main>
