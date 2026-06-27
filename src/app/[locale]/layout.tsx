@@ -7,6 +7,7 @@ import {
   setRequestLocale,
 } from "next-intl/server";
 import { locales, type Locale } from "@/i18n/routing";
+import { BackToTop } from "@/components/back-to-top";
 
 // IBM Plex Sans Thai is fetched + self-hosted by next/font at build time.
 // (Needs network to fonts.googleapis.com — works on your machine / Vercel.)
@@ -59,6 +60,7 @@ export default async function LocaleLayout({
       <body className="min-h-full">
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
+          <BackToTop />
         </NextIntlClientProvider>
       </body>
     </html>

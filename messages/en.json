@@ -154,5 +154,8 @@
     "label": "Language",
     "th": "TH",
     "en": "EN"
+  },
+  "BackToTop": {
+    "label": "Back to top"
   }
 }
