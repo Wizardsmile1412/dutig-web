@@ -24,12 +24,12 @@ export default async function HomePage({
       {/* Header + hero share one photo band, darkened toward the text side. */}
       <div className="relative isolate overflow-hidden text-white">
         <Image
-          src="/security-guard-phone.jpg"
+          src="/security-guard-monitoring-in-control-room.jpg"
           alt=""
           fill
           priority
           sizes="100vw"
-          className="object-cover object-[78%_20%]"
+          className="object-cover object-[75%_8%] sm:object-[85%_25%]"
         />
         <div className="absolute inset-0 bg-linear-to-r from-navy-950 via-navy-950/90 to-navy-950/40" />
         <div className="absolute inset-0 bg-linear-to-b from-navy-950/80 via-transparent to-navy-950/70" />

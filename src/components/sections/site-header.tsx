@@ -41,7 +41,7 @@ export async function SiteHeader({ locale }: { locale: Locale }) {
           </a>
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-4">
           <LocaleSwitcher currentLocale={locale} />
           <a
             href={APP_STORE_URL}
