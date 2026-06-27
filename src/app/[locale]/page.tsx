@@ -31,8 +31,8 @@ export default async function HomePage({
           sizes="100vw"
           className="object-cover object-[78%_20%]"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/90 to-navy-950/40" />
-        <div className="absolute inset-0 bg-gradient-to-b from-navy-950/80 via-transparent to-navy-950/70" />
+        <div className="absolute inset-0 bg-linear-to-r from-navy-950 via-navy-950/90 to-navy-950/40" />
+        <div className="absolute inset-0 bg-linear-to-b from-navy-950/80 via-transparent to-navy-950/70" />
         <div className="relative z-10">
           <SiteHeader locale={locale} />
           <Hero />
@@ -49,6 +49,7 @@ export default async function HomePage({
             src="/office-building.jpg"
             alt=""
             fill
+            priority
             sizes="100vw"
             className="object-cover object-[70%_center]"
           />
